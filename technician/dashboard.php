@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Technician Panel</title>
+</head>
+<body class="bg-base text-gray-900">
+    <?php include "../sidebar/technician.php"; ?>
+    <main class="ml-0 p-6 w-full flex-1">
+        <h1 class="text-2xl font-semibold mb-6">Technician Dashboard</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-gray-500">Assigned Tickets</p>
+                        <p class="text-3xl font-bold text-primary">8</p>
+                    </div>
+                    <div class="p-3 bg-blue-100 rounded-lg"><i data-feather="clipboard" class="w-6 h-6 text-blue-600"></i></div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-gray-500">Pending</p>
+                        <p class="text-3xl font-bold text-yellow-600">3</p>
+                    </div>
+                    <div class="p-3 bg-yellow-100 rounded-lg"><i data-feather="clock" class="w-6 h-6 text-yellow-600"></i></div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-gray-500">In Progress</p>
+                        <p class="text-3xl font-bold text-blue-600">4</p>
+                    </div>
+                    <div class="p-3 bg-blue-100 rounded-lg"><i data-feather="loader" class="w-6 h-6 text-blue-600"></i></div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-gray-500">Resolved Today</p>
+                        <p class="text-3xl font-bold text-green-600">1</p>
+                    </div>
+                    <div class="p-3 bg-green-100 rounded-lg"><i data-feather="check-circle" class="w-6 h-6 text-green-600"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-lg font-semibold mb-4">Recent Tasks</h2>
+            <div class="space-y-4">
+                <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                    <div class="flex items-center gap-4">
+                        <div class="p-2 bg-red-100 rounded-lg"><i data-feather="alert-circle" class="w-5 h-5 text-red-600"></i></div>
+                        <div>
+                            <p class="font-medium">Server down - Emergency</p>
+                            <p class="text-sm text-gray-500">#T001 • ICT Office • Urgent</p>
+                        </div>
+                    </div>
+                    <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-xs font-medium">Urgent</span>
+                </div>
+                <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                    <div class="flex items-center gap-4">
+                        <div class="p-2 bg-blue-100 rounded-lg"><i data-feather="loader" class="w-5 h-5 text-blue-600"></i></div>
+                        <div>
+                            <p class="font-medium">Computer not booting</p>
+                            <p class="text-sm text-gray-500">#T002 • Admin Office • High</p>
+                        </div>
+                    </div>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium">In Progress</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<script>feather.replace();</script>
+</body>
+</html>
